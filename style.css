@@ -1,0 +1,241 @@
+
+
+@import url('https://fonts.cdnfonts.com/css/manrope');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: manrope;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 17px;
+}
+
+h1{
+    font-size: 55px;
+    line-height: 70px;
+}
+
+h2{
+    font-size: 35px;
+}
+
+h3{
+    font-size: 25px;
+    color: rgb(66, 66, 66);
+}
+
+h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.nav{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    box-shadow: rgb(122, 122, 122) 0px 3px 3px;
+}
+
+.navbar{
+    width: 85%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-div{
+    width: 15%;
+}
+.logo-div img{
+    width: 85%;
+}
+
+ul.nav-items{
+    width: 60%;
+    display: flex;
+    list-style-type: none;
+}
+
+a.nav-item{
+    width: 20%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(24, 24, 24);
+    transition: all ease-in-out .1s;
+}
+
+a.nav-item, a.btn{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+a.active, a.nav-item:hover{
+    color: rgb(0, 67, 99);
+}
+
+a.nav-item>svg{
+    margin-left: 15px;
+}
+
+.nav-btn{
+    width: 25%;
+    }
+
+.nav-btn>.btn{
+    float: right;
+    }
+
+.btn{
+    width: 250px;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 15px;
+    transition: all ease-in-out .3s;
+}
+
+.btn>svg{
+    margin-left: 15px;
+}
+
+.btn-fill{
+    background-color: #6FC247;
+    color: white;
+}
+
+.btn-fill:hover{
+    background-color: #60a73c;
+    transition: all ease-in-out .1s;
+}
+
+.btn-outline{
+    color: rgb(24, 24, 24);
+    border: 1px solid #6FC247;
+}
+
+.btn-outline:hover{
+    border: none;
+    background-color: #6FC247;
+    color: white;
+    transition: all ease-in-out .1s;
+}
+
+.header{
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    color: rgb(66, 66, 66);
+}
+
+p#head{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+.header-btns{
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    margin: 0px auto;
+}
+
+.header-btns>.btn{
+    margin: 0px auto;
+}
+
+#center-image{
+    width: 80vw;
+    margin: 50px auto;
+    display: block;
+    margin-bottom: 80px;
+}
+
+.sec{
+    width: 70%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.brand-icons{
+    width: 85%;
+    margin: 50px auto;
+}
+
+.row{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col{
+    width: 25%;
+}
+
+.bg-dark{
+    background-color: #1a1a1a;
+    color: white;
+    padding: 8% 6%;
+}
+
+.bg-dark-header{
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+.min-container{
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 30%;
+}
+
+.min-container2{
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+}
+
+.left-section{
+    width: 40%;
+    padding:0px 40px;
+}
+
+.min-container-inner{
+    width: 85%;
+    margin: 0px auto;
+}
+
+.card2{
+    width: 100%;
+    margin: 70px auto;
+}
+
+
+.right-section{
+    width: 60%;
+}
+
+.right-section>img{
+    width: 100%;
+}
+
+.footer-btn{
+    margin: 0px auto;
+    width: fit-content;
+}
