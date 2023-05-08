@@ -238,4 +238,5 @@ p#head{
 .footer-btn{
     margin: 0px auto;
     width: fit-content;
+    margin-bottom: 100px;
 }
