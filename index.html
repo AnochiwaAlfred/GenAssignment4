@@ -7,6 +7,7 @@
     <title>Valutico - Home Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <nav class="nav">
@@ -15,19 +16,26 @@
             <div class="logo-div">
                 <a href="#"><img src="images/logo.png" alt="Valutico Logo"></a>
             </div>
-            <ul class="nav-items">
-                <a href="#" class="nav-item active"><li>Home</li></a>
-                <a href="#" class="nav-item">
-                    <li>Solutions</li>
-                    <svg class="nav-chevron-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                    </svg>
-                </a>
-                <a href="#" class="nav-item">
-                    <li>Your work</li>
-                    <svg class="nav-chevron-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                    </svg>     
+
+            <div class="mid-nav animate__animated animate__slideInDown" id="mid-nav">
+                
+            <a onclick="closeMenu()" class="close-menu" id="close-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="25px" viewBox="0 0 24 24"><path d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z"></path></svg>
+            </a>
+
+                <ul class="nav-items">
+                    <a href="#" class="nav-item active"><li>Home</li></a>
+                    <a href="#" class="nav-item">
+                        <li>Solutions</li>
+                        <svg class="nav-chevron-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <li>Your work</li>
+                        <svg class="nav-chevron-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>     
                 </a>
                 <a href="#" class="nav-item">
                     <li>Company</li>
@@ -36,7 +44,8 @@
                     </svg>             
                 </a>
             </ul>
-            <div class="nav-btn">
+        </div>
+        <div class="nav-btn">
                 <a class="btn btn-fill we" href="#">
                     <span>Request a Demo</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-square" viewBox="0 0 16 16">
@@ -45,6 +54,10 @@
                     </svg>
                 </a>
             </div>
+
+            <a onclick="openMenu()" class="menu" id="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="gray" width="25px" viewBox="0 0 24 24"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
+            </a>
         </div>
     </nav>
 
@@ -174,7 +187,7 @@
 
     </main>
 
-
+<script src="main.js"></script>
 </body>
 </html>
 
